@@ -11,12 +11,13 @@ const app = express();
 
 connectiondb();
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "http://44.207.4.141:5173", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use("/meg", mainRouter);
 app.use("/meg", taskRoute);
 app.use("/meg", vigilantRoute);
+
 
 const PORT = process.env.PORT || 1200;
 app.listen(PORT, () => {
