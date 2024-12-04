@@ -11,7 +11,8 @@ const app = express();
 
 connectiondb();
 
-app.use(cors({ origin: "http://44.207.4.141/5173", credentials: true })); 
+app.use(cors({ origin: "http://44.207.4.141:5173", credentials: true })); 
+
 app.use(express.json());
 app.use(cookieParser());
 app.use("/meg", mainRouter);
