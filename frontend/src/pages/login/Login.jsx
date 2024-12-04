@@ -26,7 +26,7 @@ function Login({ onClose }) {
 
             const data = {
                 username: user.email.split("@")[0],
-                password: ""
+                password: "123456789012"
             };
             signin(data);
         } catch (error) {
